@@ -34,7 +34,3 @@
 ## 代码库及版本管理
 
 > [github](https://github.com/)
-
-## 付费在线学习平台
-
-> [udemy](https://www.udemy.com/)
