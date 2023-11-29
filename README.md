@@ -19,6 +19,10 @@
 
 [https://fonts.google.com](https://fonts.google.com)
 
+## CSS Loader
+
+[https://www.w3schools.com/howto/howto_css_loader.asp](https://www.w3schools.com/howto/howto_css_loader.asp)
+
 ## 技术栈
 
 > [MDN HTML](https://developer.mozilla.org/zh-CN/docs/Learn/HTML)
