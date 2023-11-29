@@ -42,10 +42,6 @@ body {
   margin: 3rem;
 }
 
-.long-quote {
-  font-size: 3.2rem;
-}
-
 .buttons {
   display: flex;
   justify-content: space-between;
@@ -86,4 +82,7 @@ button:active {
   .quote--content {
     font-size: 4rem;
   }
+}
+.long-quote {
+  font-size: 3.2rem;
 }
