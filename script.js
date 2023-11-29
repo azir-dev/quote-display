@@ -4,8 +4,21 @@ const quoteContent = document.getElementById("quote-content");
 const quoteAuth = document.getElementById("quote--author");
 const newQuoteBtn = document.getElementById("new-quote");
 const postTwitterBtn = document.getElementById("twitter-button");
+const quoteEl = document.getElementById("quote");
+const loaderSpinner = document.getElementById("loader");
+
+function showLoadingSpinner() {
+  loaderSpinner.hidden = false;
+  quoteEl.hidden = true;
+}
+
+function removeLoadingSpinner() {
+  quoteEl.hidden = false;
+  loaderSpinner.hidden = true;
+}
 
 function displayQuote() {
+  showLoadingSpinner();
   const randomIndex = Math.floor(Math.random() * quotes.length);
   const quote = quotes[randomIndex];
   // 名句太长时对文字大小限制
@@ -18,6 +31,7 @@ function displayQuote() {
   quoteContent.textContent = quote.text;
   // 显示名句作者或是佚名
   quoteAuth.textContent = quote.author || "Unknown";
+  removeLoadingSpinner();
 }
 
 function postTwitter() {
@@ -27,6 +41,7 @@ function postTwitter() {
 }
 
 async function getQuotes() {
+  showLoadingSpinner();
   const url = "https://jacintodesign.github.io/quotes-api/data/quotes.json";
   try {
     const response = await fetch(url);
